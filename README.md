@@ -126,6 +126,19 @@ As seen in the figure, two arguments are being passed into this activity - blobN
 
 ### Utilizing Blob Storage
 
+Blob storage on an online Azure storage account was chosen as the primary storage solution due to its optimal capabilities when storing unstructured data files. A single container was created which consisted of three separate folders, each defining the different data entities. 
+<br>
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/blob_storage.png?raw=true" width="675"/>
+    </kbd>
+  </p>
+  <p align="center">Logic Apps Connector: Create a pipeline run</p>
+</figure>
+<br>
+
+
 ### Copying Data into SQL Server Database
 
 ### Email Notifications for Failed Activities
