@@ -116,7 +116,7 @@ Due Azure Data Factory being limited to event based triggers, we determined that
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/call_pipeline.png?raw=true" width="600"/>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/call_pipeline.png?raw=true" width="675"/>
     </kbd>
   </p>
   <p align="center">Logic Apps Connector: Create a pipeline run</p>
