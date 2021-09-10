@@ -8,7 +8,7 @@
     <li><a href="#about-the-project">About the Project</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#azure-logic-apps">Azure Logic Apps</a>
+    <li><a href="#azure-logic-apps-pipeline">Azure Logic Apps Pipeline</a>
         <ul>
           <li><a href="#file-system-trigger">File System Trigger</a></li>
           <li><a href="#branching-logic">Branching Logic</a></li>
@@ -40,6 +40,17 @@ Our UF Senior Design Team was tasked with automating the Florida Lottery Systemâ
 The following platforms were selected to build each pipeline:
 * Azure Logic Apps
 * Azure Data Factory
+
+<!-- AZURE LOGIC APPS -->
+## Azure Logic Apps Pipeline
+
+<!-- FILE SYSTEM TRIGGER -->
+### File System Trigger
+
+In order to retrieve files that were located on a computer's local directory, a file system connector was configured into the workflow. Everytime a file was added to a specified folder in the local directory, the pipeline would trigger and the next sequence of activities would ensue.
+<kbd>
+<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="400">
+</kbd><br><br>
 
 
 <!-- ACKNOWLEDGEMENTS -->
