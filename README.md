@@ -96,7 +96,6 @@ To load into the database, we used a connection titled “Insert Row (V2)”. Th
     <p align="center">
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/la_sql_insertion.png?raw=true" width="500"/>
     </p>
-    <p align="center">Logic Apps Connector: Transform XML to JSON</p>
   </figure>
 </kbd>
 
