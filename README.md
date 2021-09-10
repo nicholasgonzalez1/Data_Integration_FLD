@@ -151,7 +151,7 @@ To reiterate, the purpose for utilizing blob storage is because we cannot simply
 
 ### Copying Data into SQL Server Database
 
-The key benefit of using Data Factory was observed through it’s selection of activities to transform and move the data. In the pipeline, moving the data from the Blob Storage to the database table was done in a single step called a Copy Data activity. Within the Copy Data activity, we need to specify exactly which file to transfer from the blob storage. This is done by referencing the parameters blobName and blobType that were passed from the Logic Apps portion; with these parameters, we're able to pinpoint the exact location where we stored the processed data file. 
+The key benefit of using Data Factory was observed through it’s selection of activities to transform and move the data. In the pipeline, moving the data from the blob storage to the database table was done in a single step called a Copy Data activity. Within the Copy Data activity, we needed to specify exactly which file to transfer from the blob storage. This is done by referencing the parameters blobName and blobType that were passed in from the Logic Apps workflow portion; with these parameters, we're able to pinpoint the exact location where we stored the processed data file. 
 <br><br>
 <figure>
   <p align="center">
@@ -159,13 +159,37 @@ The key benefit of using Data Factory was observed through it’s selection of a
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/copy_data.png?raw=true" width="600"/>
     </kbd>
   </p>
-  <p align="center">Logic Apps Connector: Create blob</p>
+  <p align="center">Data Factory activity: Copy Data</p>
 </figure>
 <br>
 
 ### Email Notifications for Failed Activities
 
+Another functionality that was added to the Data Factory pipeline was the ability to send email notifications to  administrators when particular errors occur. The pipeline included error alerts to be sent after attempting to transfer the file contents to the SQL database. When an activity fails, an HTTP POST is made thus triggering a separate Azure Logic Apps workflow, as seen below. Information about the particular failure in the data factory pipeline is listed in the body of the POST method, which is formatted as a JSON array.
+<br>
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/data_factory_error.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Data Factory activity: HTTP Post describing failed activity</p>
+</figure>
+When the HTTP POST method is received, a simple two-step workflow in Logic Apps is triggered. The initial trigger action processes the HTTP body with a previously generated JSON schema. Afterwards, an email is sent to a specified address containing the information passed in from the HTTP POST method, where the email’s body is now formatted appropriately using a predefined template.
+<br><br>
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/la_error_workflow.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Logic Apps Connector: Create blob</p>
+</figure>
+<br>
+
 ## Further Documentation
+
+This readme file only highlights the main features of the Azure Data Factory pipeline and Azure Logic Apps workflow. Please refer to our project's [documentation](https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/Data_Integration_Documentation.pdf) for an extensive overview of how each workflow was constructed. This documentation contains detailed steps necessary to build these pipelines from scratch.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
