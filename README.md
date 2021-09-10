@@ -48,8 +48,9 @@ The following platforms were selected to build each pipeline:
 ### File System Trigger
 
 In order to retrieve files that were located on a computer's local directory, a file system connector was configured into the workflow. Everytime a file was added to a specified folder in the local directory, the pipeline would trigger and the next sequence of activities would ensue.
+<br><br>
 <kbd>
-<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="400">
+<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="700">
 </kbd><br><br>
 
 
