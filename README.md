@@ -99,13 +99,14 @@ Once the file type is determined, the XML content is transformed via mapping the
 
 To load into the database, we used a connection titled “Insert Row (V2)”. This action allows you to select a server, database, and specific table within a SQL server to add entries into via a connection. For each file type, the insert row step inserts entries into each respective database. Be sure to click “Add New Parameters” and match each parsed JSON object to the correct column name.
 <br>
-<kbd>
-  <figure>
-    <p align="center">
+<figure>
+  <p align="center">
+    <kbd>
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/la_sql_insertion.png?raw=true" width="500"/>
-    </p>
-  </figure>
-</kbd>
+    </kbd>
+  </p>
+</figure>
+
 
 
 <!-- ACKNOWLEDGEMENTS -->
