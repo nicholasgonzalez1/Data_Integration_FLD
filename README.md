@@ -161,7 +161,6 @@ The key benefit of using Data Factory was observed through it’s selection of a
   </p>
   <p align="center">Data Factory activity: Copy Data</p>
 </figure>
-<br>
 
 ### Email Notifications for Failed Activities
 
