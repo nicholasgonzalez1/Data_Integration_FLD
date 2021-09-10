@@ -66,9 +66,9 @@ Once the contents are the file were retrieved, the type of file needed to be det
 <kbd>
   <figure>
     <p align="center">
-      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/branching_logic.png?raw=true" width="700"/>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/branching_logic.png?raw=true" width="500"/>
     </p>
-    <p align="center">Logic Apps connector: “When a file is added or modified (properties only)"</p>
+    <p align="center">Logic for ensuring XML content is transformed using the right .liquid template</p>
   </figure>
 </kbd>
 
