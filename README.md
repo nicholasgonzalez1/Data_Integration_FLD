@@ -88,7 +88,7 @@ Once the file type is determined, the XML content is transformed via mapping the
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/xml_to_json.png?raw=true" width="500"/>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/xml_to_json.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">Logic Apps Connector: Transform XML to JSON</p>
