@@ -24,6 +24,7 @@
           <li><a href="#email-notifications-for-failed-activities">Email Notifications for Failed Activities</a></li>
       </ul>
     </li>
+    <li><a href="#further-documentation">Further Documentation</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
