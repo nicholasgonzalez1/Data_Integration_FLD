@@ -51,8 +51,10 @@ In order to retrieve files that were located on a computer's local directory, a 
 <br><br>
 <kbd>
   <figure>
-<img align="center" src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="700">
+    <p alight="center">
+<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="700">
     <figcaption>Logic Apps connector: “When a file is added or modified (properties only)"</figcaption>
+    </p>
   </figure>
 </kbd><br><br>
 
