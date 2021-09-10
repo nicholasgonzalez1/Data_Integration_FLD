@@ -136,12 +136,12 @@ Blob storage on an online Azure storage account was chosen as the primary storag
   </p>
   <p align="center">Azure Blob Storage: locations for different data file contents</p>
 </figure>
-While still in the Logic Apps portion of this workflow, information is recorded about the data file being processed and a new blob is created within the Azure storage account. As seen in figure 14, the folder path within the container is dynamically specified so that file can be placed in its appropriate entity’s folder. The other fields, blob name and blob content, are also dynamically inputted using outputs from previous logic app actions. This is the last step before the Azure data factory pipeline is called.
+While still in the Logic Apps portion of this workflow, information is recorded about the data file being processed and a new blob is created within the Azure storage account. The folder path within the container is dynamically specified so that file can be placed in its appropriate entity’s folder. The other fields, blob name and blob content, are also dynamically inputted using outputs from previous logic app actions. This is the last step before the Azure data factory pipeline is called.
 <br><br>
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/create_blob.png?raw=true" width="600"/>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/create_blob.png?raw=true" width="700"/>
     </kbd>
   </p>
   <p align="center">Logic Apps Connector: Create blob</p>
