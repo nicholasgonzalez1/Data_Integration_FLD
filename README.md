@@ -185,11 +185,12 @@ When the HTTP POST method is received, a simple two-step workflow in Logic Apps 
   </p>
   <p align="center">Logic Apps Connector: Create blob</p>
 </figure>
-<br>
 
 ## Further Documentation
 
 This readme file only highlights the main features of the Azure Data Factory pipeline and Azure Logic Apps workflow. Please refer to our project's [documentation](https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/Data_Integration_Documentation.pdf) for an extensive overview of how each workflow was constructed. This documentation contains detailed steps necessary to build these pipelines from scratch.
+
+Additionally, our final PowerPoint presentation made to Florida Lottery Department managers and directors can be viewed [here](https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/FLD_Final_Presentation.pdf).
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
