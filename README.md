@@ -126,18 +126,29 @@ As seen in the figure, two arguments are being passed into this activity - blobN
 
 ### Utilizing Blob Storage
 
-Blob storage on an online Azure storage account was chosen as the primary storage solution due to its optimal capabilities when storing unstructured data files. A single container was created which consisted of three separate folders, each defining the different data entities. 
+Blob storage on an online Azure storage account was chosen as the primary storage solution due to its optimal capabilities when storing unstructured data files. A single container was created which consisted of three separate folders, each defining the different data entities, as seen below. "Creating a blob" refers to the upload of a new file to the storage container.
 <br>
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/blob_storage.png?raw=true" width="675"/>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/blob_storage.png?raw=true" width="475"/>
     </kbd>
   </p>
   <p align="center">Logic Apps Connector: Create a pipeline run</p>
 </figure>
 <br>
-
+While still in the Logic Apps portion of this workflow, information is recorded about the data file being processed and a new blob is created within the Azure storage account. As seen in figure 14, the folder path within the container is dynamically specified so that file can be placed in its appropriate entity’s folder. The other fields, blob name and blob content, are also dynamically inputted using outputs from previous logic app actions. This is the last step before the Azure data factory pipeline is called.
+<br>
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/create_blob.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Logic Apps Connector: Create a pipeline run</p>
+</figure>
+<br>
+To reiterate, the purpose for utilizing blob storage is because we cannot simply pass the contents of a data file into the Data Factory pipeline; instead, we must upload the data files to a centralized storage account such as a blob storage so that we can reference it there later while in the Data Factory environment.
 
 ### Copying Data into SQL Server Database
 
