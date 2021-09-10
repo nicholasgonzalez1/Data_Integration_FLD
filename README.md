@@ -151,6 +151,18 @@ To reiterate, the purpose for utilizing blob storage is because we cannot simply
 
 ### Copying Data into SQL Server Database
 
+The key benefit of using Data Factory was observed through it’s selection of activities to transform and move the data. In the pipeline, moving the data from the Blob Storage to the database table was done in a single step called a Copy Data activity. Within the Copy Data activity, we need to specify exactly which file to transfer from the blob storage. This is done by referencing the parameters blobName and blobType that were passed from the Logic Apps portion; with these parameters, we're able to pinpoint the exact location where we stored the processed data file. 
+<br><br>
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/copy_data.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Logic Apps Connector: Create blob</p>
+</figure>
+<br>
+
 ### Email Notifications for Failed Activities
 
 ## Further Documentation
