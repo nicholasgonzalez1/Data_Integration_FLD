@@ -136,9 +136,8 @@ Blob storage on an online Azure storage account was chosen as the primary storag
   </p>
   <p align="center">Logic Apps Connector: Create a pipeline run</p>
 </figure>
-<br>
 While still in the Logic Apps portion of this workflow, information is recorded about the data file being processed and a new blob is created within the Azure storage account. As seen in figure 14, the folder path within the container is dynamically specified so that file can be placed in its appropriate entity’s folder. The other fields, blob name and blob content, are also dynamically inputted using outputs from previous logic app actions. This is the last step before the Azure data factory pipeline is called.
-<br>
+<br><br>
 <figure>
   <p align="center">
     <kbd>
@@ -148,7 +147,7 @@ While still in the Logic Apps portion of this workflow, information is recorded 
   <p align="center">Logic Apps Connector: Create a pipeline run</p>
 </figure>
 <br>
-To reiterate, the purpose for utilizing blob storage is because we cannot simply pass the contents of a data file into the Data Factory pipeline; instead, we must upload the data files to a centralized storage account such as a blob storage so that we can reference it there later while in the Data Factory environment.
+To reiterate, the purpose for utilizing blob storage is because we cannot simply pass the contents of a data file into the Data Factory environment; instead, we must upload the data files to a centralized storage account such as a blob storage so that we can reference it there later while in the Data Factory pipeline.
 
 ### Copying Data into SQL Server Database
 
