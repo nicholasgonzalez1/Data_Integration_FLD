@@ -20,7 +20,7 @@
         <ul>
           <li><a href="#logic-apps-trigger">Logic Apps Trigger</a></li>
           <li><a href="#blob-storage">Blob Storage</a></li>
-          <li><a href="#copy-data-into-SQL-Server-Database">Copy Data into SQL Server Database</a></li>
+          <li><a href="#copying-data-into-SQL-Server-Database">Copying Data into SQL Server Database</a></li>
           <li><a href="#email-notifications-for-failed-activities">Email Notifications for Failed Activities</a></li>
       </ul>
     </li>
