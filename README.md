@@ -58,6 +58,7 @@ In order to retrieve files that were located on a computer's local directory, a 
   </figure>
 </kbd>
 
+<!-- BRANCHING LOGIC -->
 ### Branching Logic
 
 Once the contents are the file were retrieved, the type of file needed to be determined so that it could be further processed by a correct script. For the Logic Apps pipeline, all files being passed through were of XML type. However, the contents of the file were divided by 3 different types: Retailer, Player, and Game. Since actual company was restricted from being given to us, these file types were meant to mimic different classifications of data used at the Florida Lottery. The figure below shows the logic we used to determine the type of file being processed.
@@ -71,6 +72,7 @@ Once the contents are the file were retrieved, the type of file needed to be det
   </figure>
 </kbd>
 
+<!-- XML TO JSON CONVERSION -->
 ### XML to JSON Conversion
 
 Once the file type is determined, the XML content is transformed via mapping the content through a Liquid Template. In Azure, we utilized the Liquid connector that has an action of transforming XML content to JSON. Liquid maps were created using Visual Studio Code. These liquid files loop through the content of the XML file and grab the corresponding attributes for each record from the XML file. The figure liquid template file that was used to transform a file of type “player” to JSON.
@@ -79,6 +81,20 @@ Once the file type is determined, the XML content is transformed via mapping the
   <figure>
     <p align="center">
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/xml_to_json.png?raw=true" width="500"/>
+    </p>
+    <p align="center">Logic Apps Connector: Transform XML to JSON</p>
+  </figure>
+</kbd>
+
+<!-- LOADING DATA INTO SQL SERVER DATABASE -->
+### Loading Data into SQL Server Database
+
+To load into the database, we used a connection titled “Insert Row (V2)”. This action allows you to select a server, database, and specific table within a SQL server to add entries into via a connection. For each file type, the insert row step inserts entries into each respective database. Be sure to click “Add New Parameters” and match each parsed JSON object to the correct column name.
+<br>
+<kbd>
+  <figure>
+    <p align="center">
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/la_sql_insertion.png?raw=true" width="500"/>
     </p>
     <p align="center">Logic Apps Connector: Transform XML to JSON</p>
   </figure>
