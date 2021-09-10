@@ -122,7 +122,7 @@ Due Azure Data Factory being limited to event based triggers, we determined that
   <p align="center">Logic Apps Connector: Create a pipeline run</p>
 </figure>
 <br>
-As seen in the figure, two arguments are being passed into this activity - blobName and blobType. These parameters are used in the Data Factory pipeline to locate the file within the Blob Storage (centralized storage container), which is further explained in the next section. 
+As seen in the figure, two arguments are being passed into this activity - blobName and blobType. These parameters are used later in the Data Factory pipeline to locate the file within the Blob Storage (centralized storage container), which is further explained in the next section. 
 
 ### Utilizing Blob Storage
 
