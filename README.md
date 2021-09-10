@@ -69,7 +69,7 @@ In order to retrieve files that were located on a computer's local directory, a 
 
 ### Branching Logic
 
-Once the contents are the file were retrieved, the type of file needed to be determined so that it could be further processed by a correct script. For the Logic Apps pipeline, all files being passed through were of XML type. However, the contents of the file were divided by 3 different types: Retailer, Player, and Game. Since actual company was restricted from being given to us, these file types were meant to mimic different classifications of data used at the Florida Lottery. The figure below shows the logic we used to determine the type of file being processed.
+Once the contents are the file were retrieved, the type of file needed to be determined so that it could be further processed by a correct script. For the Logic Apps pipeline, all files being passed through were of XML type. However, the contents of the file were divided by 3 different types: Retailer, Player, and Game. Since actual company data was restricted from being given to us, these file types were meant to mimic different classifications of data used at the Florida Lottery. The figure below shows the logic we used to determine the type of file being processed.
 <br>
 <figure>
   <p align="center">
