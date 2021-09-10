@@ -35,9 +35,11 @@
 With the Florida Lottery as the group’s sponsors, this project aimed to improve the current file ETL processes by supporting the transition from a legacy integration platform to a modern integration platform. In particular, the team analyzed the use of two Microsoft Azure Services - Azure Logic Apps and Azure Data Factory. The proposed solution is a proof-of-concept that each platform could perform the basic file ETL process functionality. This was achieved through research and implementation of a prototype on each platform. After following the cycle of researching, prototyping, and assessing, the team created two final prototypes that each retrieve a file from a local file system, transform the data, and insert the data to an SQL database table.
 
 <kbd>
+  <figure>
     <p align="center">
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/about_project.png?raw=true" width="700"/>
     </p>
+  </figure>
 </kbd>
 
 <!-- BUILT WITH -->
