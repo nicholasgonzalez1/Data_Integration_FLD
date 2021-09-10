@@ -32,7 +32,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Our UF Senior Design Team was tasked with automating the Florida Lottery System’s current file storage process. The scope of this project included retrieving a file (Player, Retailer, or Game Focused) and having the creation of the file in a storage trigger a workflow to insert JSON objects into a SQL server. Our team explored two different methods to achieve this goal - Azure Logic Apps and Azure Data Factory. We noted the pros and cons of each platform and documented how to recreate these workflows.
+With the Florida Lottery as the group’s sponsors, this project aimed to improve the current file ETL processes by supporting the transition from a legacy integration platform to a modern integration platform. In particular, the team analyzed the use of two Microsoft Azure Services - Azure Logic Apps and Azure Data Factory. The proposed solution is a proof-of-concept that each platform could perform the basic file ETL process functionality. This was achieved through research and implementation of a prototype on each platform. After following the cycle of researching, prototyping, and assessing, the team created two final prototypes that each retrieve a file from a local file system, transform the data, and insert the data to an SQL database table.
+<br>
+<kbd>
+  <figure>
+    <p align="center">
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/about_project.png?raw=true" width="500"/>
+    </p>
+  </figure>
+</kbd>
 
 <!-- BUILT WITH -->
 ## Built With
