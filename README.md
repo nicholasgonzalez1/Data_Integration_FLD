@@ -7,7 +7,6 @@
   <ol>
     <li><a href="#about-the-project">About the Project</a></li>
     <li><a href="#built-with">Built With</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#azure-logic-apps-workflow">Azure Logic Apps Workflow</a>
         <ul>
           <li><a href="#file-system-trigger">File System Trigger</a></li>
