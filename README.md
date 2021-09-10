@@ -56,7 +56,7 @@ In order to retrieve files that were located on a computer's local directory, a 
     </p>
     <p align="center">Logic Apps connector: “When a file is added or modified (properties only)"</p>
   </figure>
-</kbd><br><br>
+</kbd>
 
 ### Branching Logic
 
@@ -65,9 +65,12 @@ Once the contents are the file were retrieved, the type of file needed to be det
 <br><br>
 <kbd>
   <figure>
-<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/branching_logic.png?raw=true" width="700">
+    <p align="center">
+      <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/branching_logic.png?raw=true" width="700"/>
+    </p>
+    <p align="center">Logic Apps connector: “When a file is added or modified (properties only)"</p>
   </figure>
-</kbd><br><br>
+</kbd>
 
 
 <!-- ACKNOWLEDGEMENTS -->
