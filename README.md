@@ -182,7 +182,7 @@ When the HTTP POST method is received, a simple two-step workflow in Logic Apps 
       <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/la_error_workflow.png?raw=true" width="600"/>
     </kbd>
   </p>
-  <p align="center">Logic Apps Connector: Create blob</p>
+  <p align="center">Separate Logic Apps workflow for email alerts</p>
 </figure>
 
 ## Further Documentation
