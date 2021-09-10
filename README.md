@@ -50,7 +50,20 @@ The following platforms were selected to build each pipeline:
 In order to retrieve files that were located on a computer's local directory, a file system connector was configured into the workflow. Everytime a file was added to a specified folder in the local directory, the pipeline would trigger and retrieve the contents of the newly added files. This connector served as a gateway that allowed us to bridge the gap between on-premise devices and the configured Logic Apps workflow.
 <br><br>
 <kbd>
+  <figure>
 <img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/file_system_trigger.png?raw=true" width="700">
+  </figure>
+</kbd><br><br>
+
+### Branching Logic
+
+Once the contents are the file were retrieved, the type of file needed to be determined so that it could be further processed by a correct script. For the Logic Apps pipeline, all files being passed through were of XML type. However, the contents of the file were divided by 3 different types: Retailer, Player, and Game. Since actual company was restricted from being given to us, these file types were meant to mimic different classifications of data used at the Florida Lottery. The image below shows the logic we used to determine the type of file being processed.
+
+<br><br>
+<kbd>
+  <figure>
+<img src="https://github.com/nicholasgonzalez1/Data_Integration_FLD/blob/main/images/branching_logic.png?raw=true" width="700">
+  </figure>
 </kbd><br><br>
 
 
