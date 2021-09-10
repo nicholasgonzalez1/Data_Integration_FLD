@@ -74,8 +74,7 @@ Once the contents are the file were retrieved, the type of file needed to be det
 ### XML to JSON Conversion
 
 Once the file type is determined, the XML content is transformed via mapping the content through a Liquid Template. In Azure, we utilized the Liquid connector that has an action of transforming XML content to JSON. Liquid maps were created using Visual Studio Code. These liquid files loop through the content of the XML file and grab the corresponding attributes for each record from the XML file. The figure liquid template file that was used to transform a file of type “player” to JSON.
-
-<br><br>
+<br>
 <kbd>
   <figure>
     <p align="center">
