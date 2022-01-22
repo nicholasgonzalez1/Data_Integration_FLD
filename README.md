@@ -110,7 +110,7 @@ To load into the database, we used a connection titled “Insert Row (V2)”. Th
 The basic structure of a project in Azure Data Factory involves securing connections to all sources and applications that the data must move between, followed by consolidating the data in a centralized storage container. From this storage area, the data can easily be transformed and analyzed using Azure’s various tools. For this project’s Azure Data Factory prototype, Azure Blob Storage is used as the centralized storage container, and Data Factory tools provide a dynamic movement of the data from Blob Storage to our SQL Database.
 
 ### Logic Apps Trigger
-Due Azure Data Factory being limited to event based triggers, we determined that the best way to trigger the Data Factory pipeline would be through a file system trigger implemented in Azure Logic Apps. This was the same exact trigger used previously in the Logic Apps workflow; however, after we retrieve the contents of the newly added file, we then call upon the Data Factory pipeline using the connector displayed below. 
+Due to Azure Data Factory being limited to event based triggers, we determined that the best way to trigger the Data Factory pipeline would be through a file system trigger implemented in Azure Logic Apps. This was the same exact trigger used previously in the Logic Apps workflow; however, after we retrieve the contents of the newly added file, we then call upon the Data Factory pipeline using the connector displayed below. 
 <br>
 <figure>
   <p align="center">
